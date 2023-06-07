@@ -29,7 +29,7 @@ Com o docker instalado e configurado, você vai entrar na pasta onde clonou o pr
 ``` cd clientesAPI ```
 
 E vai buildar a imagem do dockerfile com o comando:
- ``` docker build -t clientesApi ```
+ ``` docker build -t clientesApi .```
 
 Depois é só subir o container com a imagem do projeto:
 ``` docker run -p 8080:8080 clientesApi ```
