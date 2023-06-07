@@ -40,14 +40,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/client?cpf=222222",
+					"raw": "http://localhost:8080/client/por-cpf?cpf=222222",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"client"
+						"client",
+						"por-cpf"
 					],
 					"query": [
 						{
