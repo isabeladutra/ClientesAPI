@@ -13,7 +13,7 @@ Esta é uma aplicação Spring Boot com interface totalmente REST que permite:
 
 ## Tecnologias Utilizadas
 * java 17
-* Banco mysql em container
+* Banco h2
 * Docker
 * Spring boot, Spring MVC e Spring Data
 * Junit e Mockito
@@ -29,7 +29,10 @@ Com o docker instalado e configurado, você vai entrar na pasta onde clonou o pr
 ``` cd clientesAPI ```
 
 E vai buildar a imagem do dockerfile com o comando:
-``` docker-compose up ```
+ ``` docker build -t clientesApi ```
+ 
+ Depois é só subir o container com a imagem do projeto:
+``` docker run -p 8080:8080 clientesApi ```
 
 
 A aplicação ficará disponibilizada no endereço: ```http://localhost:8080/```
