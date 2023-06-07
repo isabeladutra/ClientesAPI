@@ -13,7 +13,7 @@ Esta é uma aplicação Spring Boot com interface totalmente REST que permite:
 
 ## Tecnologias Utilizadas
 * java 17
-* Banco mysql em container
+* Banco h2
 * Docker
 * Spring boot, Spring MVC e Spring Data
 * Junit e Mockito
