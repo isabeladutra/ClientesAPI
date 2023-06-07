@@ -13,6 +13,8 @@ import br.com.clientesAPI.model.Celular;
 import br.com.clientesAPI.model.Cliente;
 import br.com.clientesAPI.model.Email;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
@@ -22,7 +24,9 @@ public class ClienteService {
 
 	@PersistenceContext
 	private EntityManager entityManager;
+	
 
+	
 	@Transactional
 	public void insertCliente(Cliente cliente) throws ClienteExistenteException {
 
