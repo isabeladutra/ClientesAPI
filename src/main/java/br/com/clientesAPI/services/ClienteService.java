@@ -171,6 +171,11 @@ public class ClienteService {
 		deleteEmailQuery.setParameter("cpf", cpf);
 		deleteEmailQuery.executeUpdate();
 
+		Query deleteCelularQuery = entityManager
+				.createNativeQuery("DELETE FROM celular WHERE cliente_id IN (SELECT id FROM cliente WHERE cpf = :cpf)");
+		deleteCelularQuery.setParameter("cpf", cpf);
+		deleteCelularQuery.executeUpdate();
+		
 		Query deleteClienteQuery = entityManager.createNativeQuery("DELETE FROM cliente WHERE cpf = :cpf");
 		deleteClienteQuery.setParameter("cpf", cpf);
 		deleteClienteQuery.executeUpdate();
