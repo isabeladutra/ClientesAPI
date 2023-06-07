@@ -45,6 +45,7 @@ public class ClientesApiController {
 	@PostMapping(value = "/clientes")
 	public ResponseEntity<String> cadastraCliente(@RequestBody Cliente cliente) {
 		try {
+			
 			clienteService.insertCliente(cliente);
 			HttpStatus returnStatusCode = HttpStatus.CREATED;
 			return new ResponseEntity<String>("Cliente cadastrado com sucesso", returnStatusCode);
