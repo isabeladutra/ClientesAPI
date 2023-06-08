@@ -12,4 +12,4 @@ COPY clientesAPI-1.0.0.jar clientesAPI-1.0.0.jar
 EXPOSE 8080
 
 # Comando a ser executado quando o container for iniciado
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "clientesAPI-1.0.0.jar"]
