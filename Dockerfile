@@ -6,7 +6,7 @@ WORKDIR /app
 
 
 # Copia o arquivo JAR da aplicação para o container
-COPY clientesAPI-1.0.0.jar app.jar
+COPY clientesAPI-1.0.0.jar clientesAPI-1.0.0.jar
 
 # Expõe a porta que a aplicação utiliza
 EXPOSE 8080
